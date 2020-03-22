@@ -2,11 +2,12 @@
 
 namespace DiscordBannerBot
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DiscordBot bot = new DiscordBot();
+            bot.RunAsync().GetAwaiter().GetResult();
         }
     }
 }
